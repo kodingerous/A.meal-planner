@@ -1,0 +1,15 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  background-image: url(/pics/fbg1.jpg);
+}
+
+h1{
+  color: rgb(255, 0, 85);
+}
+.mainWrapper{
+  margin: 25px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+    
+  </head>
+  <body>
+    <div class="mainWrapper">
+    
+      <h1>Create your shopping list for <br>selected menu here!</h1>
+
+      <form>
+        <div class="form-group">
+          <label>Menu name</label>
+          <input id="fileName" type="text" class="form-control" placeholder="Enter title of file here.">
+        </div>
+
+        <div class="form-group">
+          <label>Ingredients</label>
+          <textarea id="fileContents" class="form-control" rows="5" placeholder="Enter list of ingredients here."></textarea>
+
+        </div>
+      </form>
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnUpdate" class="btn btn-default">Update</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+
+    </div>
+
+    <script src="main.js">
+
+    </script>
+  </body>
+  <footer>
+    <nav style="padding: 20px;">
+      <a href="food.html">Menu-search</a> | 
+      <button type="button" 
+        onclick="window.open('', '_self', ''); window.close();">Exit</button>
+    </nav>
+    </footer>
+</html>
+  

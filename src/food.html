@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu Finder</title>
+
+    <style type="text/css">
+
+        header{
+        background-color: #cbca8f;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        }
+
+        .container{
+			display: flex;
+			justify-content: center;
+		}
+
+		.card-txt{
+			background-color: rgba(132, 161, 109, 0.7);
+			width: 40%;
+            height: 50%;
+			padding: 20px;
+			margin: 10px;
+			border-radius: 15px;
+            text-align: left;
+
+		}
+
+        .card-txt2{
+			background-color: rgba(132, 161, 109, 0.7);
+			width: 60%;
+			padding: 20px;
+			margin: 10px;
+			border-radius: 15px;
+            text-align: left;
+		}
+        
+        *{
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+
+        .food{
+			width: 100%;
+			color: black;
+			padding: 10px;
+		}
+
+		.category{
+			width: 100%;
+			color: black;
+			padding: 10px;
+		}
+
+        .ori{
+			width: 100%;
+			color: black;
+			padding: 10px;
+		}
+
+        .ingredients{
+			width: 100%;
+			color: black;
+			padding: 10px;
+		}
+
+        .instructions{
+			width: 100%;
+			color: black;
+			padding: 10px;
+		}
+        
+        footer{
+            margin-top: auto;
+            text-align: center;
+            background-color: #cbca8f;
+            padding: 5px;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    
+</head>
+<body  style="background-image: url(pics/fbg3.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;"> 
+	
+    <header>
+		<h1>Food Finder 101</h1>
+	</header>
+    
+        <div class="container">		<!--addbox model-->
+
+            <div class="card-txt">
+                <h2 style="text-decoration-line: underline;">Search</h2><br>
+                <main>
+                    <p>Type the name of a menu you would like to find.</p>
+                    <br></br>
+                    <form method="POST" id ="foodForm">
+                        <input type="text" id="name" placeholder="Food name"/>
+                        <input id="postSubmit" type="submit" value="Submit"/>
+                    </form>
+                </main>
+            </div>
+
+            <div class="card-txt2">
+                <div class="food"></div>
+                <div class="category"></div>
+                <div class="ori"></div>
+                Ingredients:
+                <div class="ingredients"></div>
+                <div class="instructions"></div>
+                
+                <script src="food.js"></script>
+                <script src="foodcat.js"></script>
+                <script src="foodori.js"></script>
+                <script src="fooding.js"></script>
+                <script src="foodins.js"></script>
+            </div>
+
+        </div>
+</body>
+<footer>
+    <nav>
+      <a href="index.html">Shopping list</a> | 
+      <button type="button" 
+        onclick="window.open('', '_self', ''); window.close();">Exit</button>
+    </nav>
+</footer>
+</html>
